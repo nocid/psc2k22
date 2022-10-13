@@ -1,0 +1,5 @@
+# psc2k22
+
+This is a repository containing the code of the 25 hackerrank exercises for assignement 1 of Principles of Computer Science 2.
+The exercises are organised based on their types (strings, sets, etc...).
+Here is the link to my profile: https://www.hackerrank.com/romainpastre51?hr_r=1
