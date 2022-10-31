@@ -1,4 +1,4 @@
-#!/bin/python3
+#https://www.hackerrank.com/challenges/diagonal-difference/problem
 
 import math
 import os
@@ -6,20 +6,16 @@ import random
 import re
 import sys
 
-#
-# Complete the 'diagonalDifference' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts 2D_INTEGER_ARRAY arr as parameter.
-#
-
 def diagonalDifference(arr):
     left_right = 0
     right_left = 0
-        for i, j in range(0, n-1):
-            left_right += arr[i][j]
-            right_left += arr[:i][j]
-    result = asb(left_right-right_left)
+    for j in range(n):
+        for i in range(n):
+            if i == j:
+                left_right += arr[j][i]
+            if i + j == n-1:
+                right_left += arr[j][i]
+    result = abs(left_right-right_left)
     return result
             
 if __name__ == '__main__':
